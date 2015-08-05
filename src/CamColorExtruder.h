@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxOpenCv.h"
-#include <stdlib.h> 
+#include <stdlib.h>
 
 
 
@@ -22,21 +22,19 @@ class testApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-	
+
 		ofVideoGrabber grabber;
 		ofImage camImage;
 		ofPixels camPixels;
 		ofLight light;
-	
+
 		ofColor curCursorColor;
 
-	
+
 		float sphereSize;
-	
+
 		bool red, green, blue, x, dragged;
 		ofPoint cursorPosition;
 		ofVec3f globalRotation;
-		
-		ofxCvHaarFinder finder;
 
 };
